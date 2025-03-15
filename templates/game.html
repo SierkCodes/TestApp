@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nivea Soft Game</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <!-- Start Screen -->
+    <div id="start-screen" class="screen">
+        <div class="content-box">
+            <h1>Catch the Product</h1>
+            <p>Catch falling Nivea products to score points!</p>
+            <p>You have 3 lives - don't miss too many products!</p>
+            <button id="start-button" class="nivea-button">Start Game</button>
+        </div>
+    </div>
+
+    <!-- Game Screen -->
+    <div id="game-screen" class="screen hidden">
+        <div class="game-header">
+            <div class="game-stats">
+                <div class="score">Score: <span id="score">0</span></div>
+                <div class="timer">Time: <span id="timer">60</span>s</div>
+                <div class="lives">Lives: <span id="lives">3</span></div>
+            </div>
+            <div class="logo">
+                <img src="{{ url_for('static', filename='images/nivea-logo.png') }}" alt="Nivea Logo">
+            </div>
+        </div>
+        <div id="game-area"></div>
+    </div>
+
+    <!-- Game Over Screen -->
+    <div id="game-over-screen" class="screen hidden">
+        <div class="content-box">
+            <h1>Game Over</h1>
+            <div class="final-score">Score: <span id="final-score">0</span></div>
+            <button id="restart-button" class="nivea-button">Play Again</button>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/game.js') }}"></script>
+</body>
+</html> 

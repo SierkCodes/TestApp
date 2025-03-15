@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <!-- Jar body -->
+    <path d="M20 35 H80 V85 C80 90 75 95 70 95 H30 C25 95 20 90 20 85 V35" fill="#0032a0"/>
+    <!-- Jar lid -->
+    <path d="M25 35 V25 C25 20 30 15 35 15 H65 C70 15 75 20 75 25 V35" fill="#0032a0"/>
+    <!-- NIVEA text -->
+    <text x="50" y="65" font-family="Arial" font-size="14" fill="white" text-anchor="middle">NIVEA</text>
+</svg> 
